@@ -19,7 +19,6 @@ Route::get('/', [PegawaiController::class, 'index']);
 
 
 Route::get('/pegawai', [PegawaiController::class, 'index']);
-Route::get('/pegawai/{id}', [PegawaiController::class, 'detail'])->where('id', '[0-9]+');
 Route::get('/pegawai/create', [PegawaiController::class, 'create']);
 Route::post('/pegawai', [PegawaiController::class, 'store']);
 Route::get('/pegawai/{id}/edit', [PegawaiController::class, 'edit']);

@@ -1,4 +1,4 @@
-@extends('layout.base')
+@extends('layout.page')
 
 @section('title-page', $title)
 @section('content')
@@ -15,7 +15,7 @@
                 <h3 class="fw-bold">Form Pegawai</h3>
             </div>
             <div class="card-body p-4">
-                <form action="/pegawai/{{ $pegawai->id }}" method="POST">
+                <form action="/pegawai/{{ $pegawai->pegawai_id }}" method="POST">
                     @csrf
                     @method('PUT')
                     <div class="mb-3">

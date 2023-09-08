@@ -1,8 +1,8 @@
-@extends('layout.base')
+@extends('layout.page')
 
 @section('title-page', $title)
 @section('content')
-    <div class="section-siswa">
+    <div class="section">
         <div class="d-flex justify-content-between">
             <h1 class="my-3">Halaman {{ $title }}</h1>
             <div class="d-flex align-items-end">
@@ -11,7 +11,7 @@
         </div>
 
         <div class="card mt-3">
-            <div class="card-header text-center">
+            <div class="card-header text-center bg-success">
                 <h3 class="fw-bold">Form Pegawai</h3>
             </div>
             <div class="card-body p-4">

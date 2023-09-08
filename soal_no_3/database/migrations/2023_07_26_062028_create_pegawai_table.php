@@ -15,10 +15,10 @@ return new class extends Migration
     {
         Schema::create('pegawai', function (Blueprint $table) {
             $table->id('pegawai_id');
-            $table->string('pegawai_nama',50)->required();
-            $table->string('pegawai_jabatan',20)->required();
-            $table->bigInteger('pegawai_umur')->required();
-            $table->text('pegawai_alamat')->nullable(true);
+            $table->string('pegawai_nama',50);
+            $table->string('pegawai_jabatan',20);
+            $table->bigInteger('pegawai_umur');
+            $table->text('pegawai_alamat');
         });
     }
 
