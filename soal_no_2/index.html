@@ -1,45 +1,92 @@
 <html>
+    <table border="1"> 
+        <h1> Form Biodata</h1>
     <form action="" id="form">
+        <tr>
+            <td>
         Nama Lengkap
+    </td>
+    <td>
         <input type="text" name="nama_lengkap" id="nama_lengkap">
-        <br>
+    </td>
+    </tr>
+    <tr>
+        <td>
         Tempat Tanggal Lahir
+    </td>
+    <td>
         <input type="text" name="tempat_tgl_lahir" id="tempat_tgl_lahir">
-        <br>
+    </td> 
+        </tr>
+        <tr>
+        <td>
         Alamat
+    </td>
+    <td>
         <textarea name="alamat" id="alamat" cols="30" rows="10"></textarea>
-        <br>
+    </td>
+</tr>
+        <tr>
+            <td>
         No Telp
+    </td>
+    <td>
         <input type="text" name="no_telp" id="no_telp">
-        <br>
+    </td>
+        </tr>
+        <tr>
+            <td>
         Jenis Kelamin
+    </td>
+    <td>
        <input type="radio" name="jk" id="jk" value="L">L
        <input type="radio" name="jk" id="jk" value="P">P
-       <br>
+    </td>
+    </tr>
+    <tr>
+        <td>
        Agamat
+    </td>
+    <td>
        <select name="agama" id="agama">
         <option value="Islam">Islam</option>
         <option value="Kristen">Kristen</option>
        </select>
-       <br>
+    </td>
+    </tr>
+    <tr>
+        <td>
        Hobi
+    </td>
+    <td>
        <input type="checkbox" name="hobi" value="Baca Buku" id="hobi"> Baca Buku
        <input type="checkbox" name="hobi" value="Olah Raga" id="hobi"> Olah Raga
        <input type="checkbox" name="hobi" value="Main Game" id="hobi"> Main Game
        <input type="checkbox" name="hobi" value="Hiking" id="hobi"> Hiking
-       <br>
+       </td>
+
+    </tr>
+       <tr>
+        <td>
        <input type="submit" value="submit" name="submit">
        <input type="reset" value="reset">
-
+    </td>
+    </tr>
     </form>
-
+</table>
     <script>
         document.getElementById("form").addEventListener("submit",function(event){
             event.preventDefault();
 
-            var namaLenkap = document.getElementById("nama_lengkap").value;
+            const namaLengkap = document.getElementById("nama_lengkap").value;
+            const ttl = document.getElementById("tempat_tgl_lahir").value;
+            const alamat = document.getElementById("alamat").value;
+            const no_telp = document.getElementById("no_telp").value;
+            const jk = document.getElementById("jk").value;
+            const agama = document.getElementById("agama").value;
+            const hobi = document.getElementById("hobi").value;
 
-            alert("Nama Lengkap :" + namaLenkap);
+            alert("Nama Lengkap :" + namaLengkap + "\n" + "Tempat Tanggal Lahir : " + ttl + "\n" + "Alamat : " + alamat + "\n" + "No Telepon : " + no_telp+ "\n" + "Jenis Kelamim : " + jk + "\n" + "Agama : " + agama + "\n" + "hobi : " + hobi);
         })
     </script>
 </html>
