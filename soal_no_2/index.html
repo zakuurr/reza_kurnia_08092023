@@ -1,0 +1,45 @@
+<html>
+    <form action="" id="form">
+        Nama Lengkap
+        <input type="text" name="nama_lengkap" id="nama_lengkap">
+        <br>
+        Tempat Tanggal Lahir
+        <input type="text" name="tempat_tgl_lahir" id="tempat_tgl_lahir">
+        <br>
+        Alamat
+        <textarea name="alamat" id="alamat" cols="30" rows="10"></textarea>
+        <br>
+        No Telp
+        <input type="text" name="no_telp" id="no_telp">
+        <br>
+        Jenis Kelamin
+       <input type="radio" name="jk" id="jk" value="L">L
+       <input type="radio" name="jk" id="jk" value="P">P
+       <br>
+       Agamat
+       <select name="agama" id="agama">
+        <option value="Islam">Islam</option>
+        <option value="Kristen">Kristen</option>
+       </select>
+       <br>
+       Hobi
+       <input type="checkbox" name="hobi" value="Baca Buku" id="hobi"> Baca Buku
+       <input type="checkbox" name="hobi" value="Olah Raga" id="hobi"> Olah Raga
+       <input type="checkbox" name="hobi" value="Main Game" id="hobi"> Main Game
+       <input type="checkbox" name="hobi" value="Hiking" id="hobi"> Hiking
+       <br>
+       <input type="submit" value="submit" name="submit">
+       <input type="reset" value="reset">
+
+    </form>
+
+    <script>
+        document.getElementById("form").addEventListener("submit",function(event){
+            event.preventDefault();
+
+            var inputValue = document.getElementById("nama_lengkap").value;
+
+            alert("Nama Lengkap :" + inputValue);
+        })
+    </script>
+</html>
